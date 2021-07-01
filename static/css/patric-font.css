@@ -1,0 +1,8 @@
+
+@font-face {
+    font-family: 'patrick_handregular';
+    src: url('/static/fonts/patrickhand-regular-webfont.woff2') format('woff2'),
+         url('/static/fonts/patrickhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

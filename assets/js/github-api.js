@@ -177,7 +177,7 @@ function showError(elementId, message = 'Failed to load data') {
         element.innerHTML = `
             <div class="error-message">
                 <p>⚠️ ${message}</p>
-                <button class="btn-modern btn-outline-gradient mt-3" onclick="location.reload()">
+                <button class="btn-modern btn-outline-gradient" style="margin-top: 1rem;" onclick="location.reload()">
                     Retry
                 </button>
             </div>

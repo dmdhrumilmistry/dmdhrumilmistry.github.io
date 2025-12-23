@@ -1,134 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Dhrumil Mistry Projects</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="assets/css/Header-Dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <title>Projects - Dhrumil Mistry</title>
+    <meta name="description" content="Explore my open source projects and contributions">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="assets/css/NavBar-Dark.css">
+    <link rel="stylesheet" href="assets/css/modern-style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="font-weight: bold;">
-        <div class="container"><a class="navbar-brand logo" href="/index.html">Dhrumil Mistry</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="https://gitbook.dmdhrumilmistry.tech/home">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                </ul>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="modern-navbar">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <a class="navbar-brand" href="index.html">Dhrumil Mistry</a>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="projects.html">Projects</a>
+                <a class="nav-link" href="aboutme.html">About</a>
+                <a class="nav-link" href="https://gitbook.dmdhrumilmistry.tech/home" target="_blank">Blog</a>
             </div>
         </div>
     </nav>
-    <main class="page projects-page"><section class="portfolio-block projects-cards" style="opacity: 0.96;">
-    <div class="container">
-        <div class="heading">
-            <h2>Recent Work</h2>
+
+    <!-- Header Section -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h1 class="section-title" data-aos="fade-up">My Projects</h1>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Open-source projects and tools I've built to solve real-world problems
+            </p>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/Cowin_slot_notifier"><img class="card-img-top scale-on-hover" src="assets/img/projects/CSN.png" alt="Card Image" style="max-width: 416px;max-height: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>Cowin Slot Notfier</h6>
-                        <p class="text-muted card-text"><br />COWIN SLOT NOTIFIER (CSN) helps user to get vaccine slots notification whenever available according to  information entered in details.txt file. <br /><br /></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/pyhtools"><img class="card-img-top scale-on-hover" src="assets/img/projects/PyHTools.png" alt="Card Image" style="max-height: 416px;max-width: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>PyHtools</h6>
-                        <p class="text-muted card-text"><br />A collection of different types of hacking tools written in python3 to implement MITM, ARP-spoofing, DNS- or DNS poisoning, code injector and other attacks over the network. It also consists of various malwares/trojans/ransomwares.<br /><br /></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/Termux-SSH"><img class="card-img-top scale-on-hover" src="assets/img/projects/Termux-SSH.png" alt="Card Image" style="max-height: 416px;max-width: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>Termux-SSH</h6>
-                        <p class="text-muted card-text"><br/>Termux SSH helps you to setup SSH server on termux application on android, which helps you to execute tasks remotely through terminal/cmd/powershell/termux.<br /><br /></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/safepass"><img class="card-img-top scale-on-hover" src="assets/img/projects/safepass.png" alt="Card Image" style="max-width: 416px;max-height: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>SafePass</h6>
-                        <p class="text-muted card-text">SafePass is an Open Source Password Manager which stores usernames, passwords and websites with multiple user functionality. Users can save, fetch and generate passwords and along with other operations using SafePass Terminal or Graphical User Interface.<br /><br /></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/android_root_helper"><img class="card-img-top scale-on-hover" src="assets/img/projects/android_root_helper.png" alt="Card Image" style="max-width: 416px;max-height: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>Android Root Helper</h6>
-                        <p class="text-muted card-text">Android Root Helper (ARH) helps user to root their android device On-The-Go. ARH does most of the work for the user. Any beginner can use this tool to root their Android device after installing drivers and placing custom recovery image inside the cloned repo renaming it to recovery.img<br /></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/PySecureTransfer"><img class="card-img-top scale-on-hover" src="assets/img/projects/PySecureTransfer.png" alt="Card Image" style="max-width: 416px;max-height: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>PySecureTransfer</h6>
-                        <p class="text-muted card-text">PySecureTransfer helps users to transfer their files securely over the network. Works with Android, Windows, Linux and MacOS</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/8051_door_authenticator"><img class="card-img-top scale-on-hover" src="assets/img/projects/8051_door_auth.png" alt="Card Image" style="max-height: 416px;max-width: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>8051 Door Authenticator</h6>
-                        <p class="text-muted card-text">8051 Door Authenticator is an implementation of 8051 Microcontroller which will only allow user to pass through the door when they enter the correct pin/password.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/Pulse-OTH"><img class="card-img-top scale-on-hover" src="assets/img/projects/Pulse-OTH.png" alt="Card Image" style="max-height: 416px;max-width: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>Pulse-OTH</h6>
-                        <p class="text-muted card-text">Pulse-OTH helps minorly infected patients to monitor their Oxygen SpO2 Level, Temperature and Heart Beat. Pulse-OTH uses Arduino as the heart of the device which collects the data and displays it on the serial terminal.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0"><a href="https://github.com/dmdhrumilmistry/Weather-Monitor-Center"><img class="card-img-top scale-on-hover" src="assets/img/projects/Weather_monitor_center.png" alt="Card Image" style="max-height: 416px;" /></a>
-                    <div class="card-body">
-                        <h6>Weather Monitor Center</h6>
-                        <h6><a href="#"></a></h6>
-                        <p class="text-muted card-text">A Weather Monitor Center (WMC) senses temperature, pressure and humidity of the area where raspberry pi is placed. This python script will also help user to visualize the data. <br /><br /></p>
-                    </div>
-                </div>
+    </section>
+
+    <!-- All Projects Section -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div id="all-repos" data-aos="fade-up"></div>
+            
+            <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+                <a href="https://github.com/dmdhrumilmistry?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-modern btn-primary-gradient">
+                    <i class="fab fa-github"></i> View More on GitHub
+                </a>
             </div>
         </div>
-    </div>
-    <div class="container" style="padding: 12px;text-align: center;"><a href="https://github.com/dmdhrumilmistry?tab=repositories"><button class="btn btn-primary" type="button" style="text-align: center;filter: brightness(100%) grayscale(27%) saturate(100%);color: var(--bs-gray-100);font-weight: bold;padding: 10px 16px;background: var(--bs-gray-900);">View My Other Projects on Github</button></a></div>
-</section></main>
-    <footer class="page-footer" style="padding: 0px 0px 0px;height: 205px;">
-        <footer data-aos="fade" class="footer-dark">
-            <h3 data-aos="fade">Connect With Me</h3>
-            <div class="container">
-                <div class="row">
-                    <div class="col item social"><a data-bss-hover-animate="pulse" class="icon ion-social-linkedin" href="https://www.linkedin.com/in/dhrumil-m-312966192/"></a><a data-bss-hover-animate="pulse" class="icon ion-social-github" href="https://github.com/dmdhrumilmistry/"></a><a data-bss-hover-animate="pulse" href="https://twitter.com/dmdhrumilmistry"><i class="icon ion-social-twitter"></i></a><a data-bss-hover-animate="pulse" href="https://www.youtube.com/channel/UChbjrRvbzgY3BIomUI55XDQ"><i class="icon ion-social-snapchat icon ion-social-youtube"></i></a><a data-bss-hover-animate="pulse" href="https://www.instagram.com/dmdhrumilmistry/"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Dhrumil Mistry&nbsp; © 2022</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">Connect With Me</h3>
+            <div class="social-links">
+                <a href="https://github.com/dmdhrumilmistry" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dhrumil-m-312966192/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/dmdhrumilmistry" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UChbjrRvbzgY3BIomUI55XDQ" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/dmdhrumilmistry" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-        </footer>
+            <p class="footer-text">© 2024 Dhrumil Mistry. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/github-api.js"></script>
+    <script>
+        // Load all repositories dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            GitHubAPI.renderTopRepositories('all-repos', 30);
+        });
+    </script>
 </body>
 
 </html>

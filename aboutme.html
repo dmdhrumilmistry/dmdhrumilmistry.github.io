@@ -1,191 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>About Dhrumil Mistry</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="assets/css/Header-Dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <title>About - Dhrumil Mistry</title>
+    <meta name="description" content="Learn more about Dhrumil Mistry - Software Engineer and Security Enthusiast">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="assets/css/NavBar-Dark.css">
+    <link rel="stylesheet" href="assets/css/modern-style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient"
-        style="font-weight: bold;">
-        <div class="container"><a class="navbar-brand logo" href="/index.html">Dhrumil Mistry</a><button
-                data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span
-                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="https://gitbook.dmdhrumilmistry.tech/home">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="aboutme.html">About Me</a></li>
-                </ul>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="modern-navbar">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <a class="navbar-brand" href="index.html">Dhrumil Mistry</a>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link active" href="aboutme.html">About</a>
+                <a class="nav-link" href="https://gitbook.dmdhrumilmistry.tech/home" target="_blank">Blog</a>
             </div>
         </div>
     </nav>
-    <main class="page cv-page">
-        <section class="portfolio-block block-intro border-bottom">
-            <div class="container">
-                <div data-aos="fade-up" data-aos-duration="350" class="avatar"
-                    style="background: url(&quot;https://avatars.githubusercontent.com/u/56185972&quot;) center / contain;width: 329px;height: 329px;padding: 0px;">
+
+    <!-- Header Section -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-avatar" style="width: 150px; height: 150px;">
+                    <img src="https://avatars.githubusercontent.com/u/56185972" alt="Dhrumil Mistry">
                 </div>
-                <div class="about-me">
-                    <p data-aos="fade-right" data-aos-delay="250">Hello Vistor! Welcome to About Me Page<br>I'm
-                        currently pursuing&nbsp;<strong>Bachelor of Engineering in Electronics and
-                            Telecommunication</strong>&nbsp;branch. I'm interested in various technologies and topics
-                        like Penetration Testing, Linux, Cloud Technologies, Networking, Virtualization. I like to work
-                        on projects, few of my projects include C, C++, Python, JAVA, ASM and Embedded C programming
-                        languages.<br><br></p>
+                <h1 class="section-title" data-aos="fade-up" data-aos-delay="100">About Me</h1>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200" style="max-width: 800px;">
+                    I'm currently pursuing Bachelor of Engineering in Electronics and Telecommunication. 
+                    I'm passionate about cybersecurity, penetration testing, cloud technologies, and building open-source tools.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h2 class="section-title" data-aos="fade-up">GitHub Statistics</h2>
+            <div id="github-stats" data-aos="fade-up" data-aos-delay="200"></div>
+            
+            <!-- GitHub Activity -->
+            <div style="margin-top: 3rem; text-align: center;" data-aos="fade-up">
+                <div class="glass-card" style="display: inline-block;">
+                    <img src="https://github-readme-stats.vercel.app/api?username=dmdhrumilmistry&count_private=true&show_icons=true&theme=tokyonight&cache_seconds=1800&border_radius=15" alt="GitHub Stats" style="max-width: 100%;">
                 </div>
             </div>
-        </section>
-        <section data-aos="fade-up" class="portfolio-block cv">
-            <div class="container">
-                <div class="group">
-                    <div class="row">
-                        <!-- Skills -->
-                        <div class="col-md-6 p-2">
-                            <div data-aos="fade-right" data-aos-duration="450" data-aos-delay="250"
-                                class="skills portfolio-info-card">
-                                <h2>Skills</h2>
-                                <h3>C, C++, JAVA, Python, ASM, Embedded C</h3>
-                                <h3>Virtualization</h3>
-                                <h3>Linux</h3>
-                                <h3>Networking</h3>
-                                <h3>Pentesting</h3>
-                            </div>
-                        </div>
-                        <!-- Contact Info -->
-                        <div class="col-md-6 p-2">
-                            <div data-aos="fade-right" data-aos-duration="400" class="contact-info portfolio-info-card">
-                                <h2>Contact Info</h2>
-                                <div class="row">
-                                    <div class="col-1"><i class="icon ion-person icon"></i></div>
-                                    <div class="col-9"><span>Dhrumil Mistry</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1"><i class="icon ion-at icon"></i></div>
-                                    <div class="col-9"><span><a
-                                                href="mailto:contact@dmdhrumilmistry.me">contact@dmdhrumilmistry.me</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Badges -->
-                        <div class="col-md-6 p-2">
-                            <div data-aos="fade-right" data-aos-duration="450" data-aos-delay="250"
-                                class="skills portfolio-info-card">
-                                <h2>Badges</h2>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h3>
-                                            <a
-                                                href="https://www.credly.com/badges/612ec8ab-6f29-44c2-9b90-5aa89a467e8c/public_url">
-                                                <img
-                                                    src="https://images.credly.com/size/150x150/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png">
-                                            </a>
-                                        </h3>
-                                    </div>
+        </div>
+    </section>
 
-                                    <div class="col-sm-6">
-                                        <h3>
-                                            <a
-                                                href="https://www.credly.com/badges/df0ab464-fcf2-451c-be9d-35140e4e52cf/public_url">
-                                                <img
-                                                    src="https://images.credly.com/size/150x150/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png">
-                                            </a>
-                                        </h3>
-                                    </div>
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-item">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">☕</div>
+                    <div class="skill-name">Java</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⚛️</div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🔧</div>
+                    <div class="skill-name">C/C++</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">📱</div>
+                    <div class="skill-name">Embedded C</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🐧</div>
+                    <div class="skill-name">Linux</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🌐</div>
+                    <div class="skill-name">Networking</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🎯</div>
+                    <div class="skill-name">Pentesting</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">☁️</div>
+                    <div class="skill-name">Cloud</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🖥️</div>
+                    <div class="skill-name">Virtualization</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⚙️</div>
+                    <div class="skill-name">DevOps</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🔒</div>
+                    <div class="skill-name">Security</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                    <div class="col-sm-6">
-                                        <h3>
-                                            <a
-                                                href="https://www.credly.com/badges/635c2c9f-7615-4457-9aba-714416867f0a/public_url">
-                                                <img
-                                                    src="https://images.credly.com/size/150x150/images/0a6d331e-8abf-4272-a949-33f754569a76/CCNAENSA__1_.png">
-                                            </a>
-                                        </h3>
-                                    </div>
+    <!-- Certifications Section -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h2 class="section-title" data-aos="fade-up">Certifications & Badges</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;" data-aos="fade-up" data-aos-delay="200">
+                <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                    <a href="https://www.credly.com/badges/612ec8ab-6f29-44c2-9b90-5aa89a467e8c/public_url" target="_blank">
+                        <img src="https://images.credly.com/size/150x150/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png" alt="CCNA" style="width: 120px; height: 120px; object-fit: contain;">
+                    </a>
+                    <p style="margin-top: 1rem; font-weight: 600;">CCNA ITN</p>
+                </div>
+                <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                    <a href="https://www.credly.com/badges/df0ab464-fcf2-451c-be9d-35140e4e52cf/public_url" target="_blank">
+                        <img src="https://images.credly.com/size/150x150/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png" alt="CCNA" style="width: 120px; height: 120px; object-fit: contain;">
+                    </a>
+                    <p style="margin-top: 1rem; font-weight: 600;">CCNA SRWE</p>
+                </div>
+                <div class="glass-card" style="text-align: center; padding: 1.5rem;">
+                    <a href="https://www.credly.com/badges/635c2c9f-7615-4457-9aba-714416867f0a/public_url" target="_blank">
+                        <img src="https://images.credly.com/size/150x150/images/0a6d331e-8abf-4272-a949-33f754569a76/CCNAENSA__1_.png" alt="CCNA" style="width: 120px; height: 120px; object-fit: contain;">
+                    </a>
+                    <p style="margin-top: 1rem; font-weight: 600;">CCNA ENSA</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Profile Stats -->
-                        <div class="col-md-6 p-2">
-                            <div data-aos="fade-right" data-aos-duration="400" class="contact-info portfolio-info-card">
-                                <h2>Stats</h2>
-                                <!-- Profile Stats -->
-                                <div class="row">
-                                    <div class="col-9"><a href="https://github.com/dmdhrumilmistry"><img
-                                                src="https://github-readme-stats.vercel.app/api?username=dmdhrumilmistry&count_private=true&hide_rank=true&include_all_commits=true&cache_seconds=1800&border_radius=15"></a>
-                                    </div>
-                                </div>
-                                <!-- Pyhtools Repo Stats -->
-                                <!-- <div class="row">
-                                    <div class="col-9 py-2"><a href="https://github.com/dmdhrumilmistry/pyhtools"><img
-                                                src="https://github-readme-stats.vercel.app/api/pin/?username=dmdhrumilmistry&repo=pyhtools&cache_seconds=1800&border_radius=15&layout=compact"></a>
-                                    </div>
-                                </div> -->
-                                <!-- TryHackMe Stats -->
-                                <div class="row p-2">
-                                    <h3>
-                                        <script src="https://tryhackme.com/badge/345568"></script>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div class="glass-card" data-aos="fade-up">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Contact Information</h3>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <i class="fas fa-user" style="font-size: 1.5rem; color: #a78bfa;"></i>
+                        <span>Dhrumil Mistry</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-envelope" style="font-size: 1.5rem; color: #a78bfa;"></i>
+                        <a href="mailto:contact@dmdhrumilmistry.me" style="color: inherit; text-decoration: none;">contact@dmdhrumilmistry.me</a>
                     </div>
                 </div>
-                <div class="hobbies group">
-                    <div class="heading">
-                        <h2 class="text-center" data-aos="fade-up" data-aos-delay="100">Hobbies</h2>
-                    </div>
-                    <p class="text-center text-muted" data-aos="fade-up" data-aos-delay="150">I use most of my leisure
-                        time to explore new topics from the internet ranging from topics like Cloud Technologies, VPN's,
-                        Networking, Pentesting Techniques, DVLSI, Electronic Circuit Designs, Web Hosting, Embedded
-                        Systems, etc. Along with these I play different musical instruments and love to compose melodies
-                        and beats using Music Programming software. I adore music and technology</p>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Interests & Hobbies</h3>
+                    <p style="opacity: 0.9; line-height: 1.8;">
+                        I spend most of my time exploring new technologies, learning about cloud platforms, 
+                        pentesting techniques, and working on open-source projects. I also enjoy music production 
+                        and playing various musical instruments.
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="page-footer" style="padding: 0px 0px 0px;height: 199px;">
-        <footer data-aos="fade" class="footer-dark">
-            <h3 data-aos="fade">Connect With Me</h3>
-            <div class="container">
-                <div class="row">
-                    <div class="col item social"><a data-bss-hover-animate="pulse" class="icon ion-social-linkedin"
-                            href="https://www.linkedin.com/in/dhrumil-m-312966192/"></a><a
-                            data-bss-hover-animate="pulse" class="icon ion-social-github"
-                            href="https://github.com/dmdhrumilmistry"></a><a data-bss-hover-animate="pulse"
-                            href="https://twitter.com/dmdhrumilmistry"><i class="icon ion-social-twitter"></i></a><a
-                            data-bss-hover-animate="pulse"
-                            href="https://www.youtube.com/channel/UChbjrRvbzgY3BIomUI55XDQ"><i
-                                class="icon ion-social-snapchat icon ion-social-youtube"></i></a><a
-                            data-bss-hover-animate="pulse" href="https://instagram.com/dmdhrumilmistry"><i
-                                class="icon ion-social-instagram"></i></a></div>
+        </div>
+    </section>
+
+    <!-- TryHackMe Section -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h2 class="section-title" data-aos="fade-up">CTF Platforms</h2>
+            <div style="text-align: center; margin-top: 2rem;" data-aos="fade-up" data-aos-delay="200">
+                <div class="glass-card" style="display: inline-block; padding: 2rem;">
+                    <script src="https://tryhackme.com/badge/345568"></script>
                 </div>
-                <p class="copyright">Dhrummil Mistry&nbsp; © 2022</p>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">Connect With Me</h3>
+            <div class="social-links">
+                <a href="https://github.com/dmdhrumilmistry" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dhrumil-m-312966192/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/dmdhrumilmistry" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UChbjrRvbzgY3BIomUI55XDQ" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/dmdhrumilmistry" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="footer-text">© 2024 Dhrumil Mistry. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/github-api.js"></script>
+    <script>
+        // Load GitHub stats
+        document.addEventListener('DOMContentLoaded', function() {
+            GitHubAPI.renderUserStats('github-stats');
+        });
+    </script>
 </body>
 
 </html>

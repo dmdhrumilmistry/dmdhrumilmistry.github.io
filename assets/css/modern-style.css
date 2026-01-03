@@ -1,11 +1,11 @@
 /* Modern Portfolio Styles */
 
 :root {
-    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --dark-gradient: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
-    --purple-gradient: linear-gradient(135deg, #4c1d95 0%, #7c3aed 50%, #a78bfa 100%);
-    --blue-gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+    --primary-gradient: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+    --secondary-gradient: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+    --dark-gradient: linear-gradient(135deg, #0c4a6e 0%, #075985 100%);
+    --purple-gradient: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #38bdf8 100%);
+    --blue-gradient: linear-gradient(135deg, #0369a1 0%, #0ea5e9 50%, #38bdf8 100%);
     --glass-bg: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
     --text-light: #ffffff;
@@ -37,7 +37,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(135deg, #1e3a8a 0%, #4c1d95 50%, #7c3aed 100%);
+    background: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #0ea5e9 100%);
     overflow: hidden;
 }
 
@@ -46,8 +46,9 @@ body {
     position: absolute;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(167, 139, 250, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, transparent 70%);
     animation: float 15s ease-in-out infinite;
+}
 }
 
 .animated-bg::after {
@@ -55,7 +56,7 @@ body {
     position: absolute;
     width: 150%;
     height: 150%;
-    background: radial-gradient(circle, rgba(96, 165, 250, 0.2) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.2) 0%, transparent 60%);
     animation: float 20s ease-in-out infinite reverse;
     right: 0;
     bottom: 0;
@@ -109,7 +110,7 @@ body {
 .modern-navbar .navbar-brand {
     font-size: 1.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -199,7 +200,7 @@ body {
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -236,14 +237,14 @@ body {
 }
 
 .btn-primary-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
     color: white;
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.4);
 }
 
 .btn-primary-gradient:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 15px 40px rgba(14, 165, 233, 0.6);
 }
 
 .btn-outline-gradient {
@@ -285,7 +286,7 @@ body {
 .stat-number {
     font-size: 3rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -334,7 +335,7 @@ body {
 .repo-icon {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -424,7 +425,7 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     text-align: center;
-    background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -470,7 +471,7 @@ body {
 }
 
 .social-link:hover {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
     transform: translateY(-5px);
     border-color: transparent;
     color: white;
@@ -492,7 +493,7 @@ body {
     width: 50px;
     height: 50px;
     border: 3px solid rgba(255, 255, 255, 0.1);
-    border-top-color: #a78bfa;
+    border-top-color: #38bdf8;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin: 0 auto 1rem;
@@ -544,7 +545,7 @@ body {
 
 /* Utility Classes */
 .text-gradient {
-    background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -336,6 +336,18 @@ function initAnimations() {
 function initializeApp() {
     initNavbarScroll();
     initAnimations();
+    updateCopyrightYear();
+}
+
+// Update copyright year dynamically
+function updateCopyrightYear() {
+    const currentYear = new Date().getFullYear();
+    const footerTexts = document.querySelectorAll('.footer-text');
+    footerTexts.forEach(footerText => {
+        if (footerText.textContent.includes('©')) {
+            footerText.textContent = `© ${currentYear} Dhrumil Mistry. All rights reserved.`;
+        }
+    });
 }
 
 // Auto-initialize when DOM is ready

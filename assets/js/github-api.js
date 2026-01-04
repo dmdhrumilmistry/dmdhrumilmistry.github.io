@@ -345,7 +345,8 @@ function updateCopyrightYear() {
     const footerTexts = document.querySelectorAll('.footer-text');
     footerTexts.forEach(footerText => {
         if (footerText.textContent.includes('©')) {
-            footerText.textContent = `© ${currentYear} Dhrumil Mistry. All rights reserved.`;
+            // Replace only the year in the copyright text using regex
+            footerText.textContent = footerText.textContent.replace(/©\s*\d{4}/, `© ${currentYear}`);
         }
     });
 }

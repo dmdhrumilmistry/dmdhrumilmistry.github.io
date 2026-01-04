@@ -1,0 +1,32 @@
+{
+  "profile": {
+    "name": "Dhrumil Mistry",
+    "headline": "Software Engineer & Security Enthusiast",
+    "profileUrl": "https://www.linkedin.com/in/dmdhrumilmistry/"
+  },
+  "employment": [
+    {
+      "company": "Your Company",
+      "position": "Software Engineer",
+      "location": "Remote",
+      "startDate": "2023-01",
+      "endDate": null,
+      "current": true,
+      "description": "Working on building secure and scalable applications. Specializing in cloud technologies and cybersecurity.",
+      "logo": "https://via.placeholder.com/80"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Your University",
+      "degree": "Bachelor of Engineering",
+      "field": "Electronics and Telecommunication",
+      "startDate": "2019",
+      "endDate": "2023",
+      "current": false,
+      "description": "Focused on embedded systems, networking, and cybersecurity. Active member of technical clubs.",
+      "logo": "https://via.placeholder.com/80"
+    }
+  ],
+  "lastUpdated": "2024-01-01T00:00:00.000Z"
+}

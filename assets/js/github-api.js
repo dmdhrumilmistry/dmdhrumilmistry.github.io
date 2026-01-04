@@ -336,6 +336,19 @@ function initAnimations() {
 function initializeApp() {
     initNavbarScroll();
     initAnimations();
+    updateCopyrightYear();
+}
+
+// Update copyright year dynamically
+function updateCopyrightYear() {
+    const currentYear = new Date().getFullYear();
+    const footerTexts = document.querySelectorAll('.footer-text');
+    footerTexts.forEach(footerText => {
+        if (footerText.textContent.includes('©')) {
+            // Replace only the year in the copyright text using regex
+            footerText.textContent = footerText.textContent.replace(/©\s*\d{4}/, `© ${currentYear}`);
+        }
+    });
 }
 
 // Auto-initialize when DOM is ready

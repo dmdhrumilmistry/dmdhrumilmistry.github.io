@@ -9,6 +9,10 @@ Modern static personal portfolio website with dynamic GitHub integration, showca
   - Top repositories by stars
   - GitHub statistics (repos, stars, forks, followers)
   - Repository details (description, language, stats)
+- **Dynamic LinkedIn Integration**: Displays employment and education information:
+  - Employment experience with company details, dates, and descriptions
+  - Education history with institution details and degrees
+  - Cached data for optimal performance
 - **Fully Static**: No backend required, runs entirely on GitHub Pages
 - **Responsive Design**: Optimized for all devices (desktop, tablet, mobile)
 - **Performance Optimized**: 
@@ -45,9 +49,21 @@ const userData = await fetch('https://api.github.com/users/dmdhrumilmistry');
 const repos = await fetch('https://api.github.com/users/dmdhrumilmistry/repos?sort=updated&per_page=30');
 ```
 
+### LinkedIn Data Integration
+
+Employment and education information is dynamically loaded from a JSON data file:
+
+```javascript
+// Fetch LinkedIn data
+const linkedinData = await fetch('assets/data/linkedin-data.json');
+```
+
+To update your employment and education information, edit `assets/data/linkedin-data.json`. See [LINKEDIN_INTEGRATION.md](LINKEDIN_INTEGRATION.md) for detailed instructions.
+
 ### Caching Strategy
 
 - All GitHub API responses are cached in `localStorage` for 1 hour
+- LinkedIn data is cached for 1 hour
 - Reduces API calls and improves load times
 - Automatic cache invalidation after expiry
 
@@ -92,8 +108,9 @@ The website automatically updates content from GitHub, but you can customize:
 
 1. **Personal Information**: Edit the HTML files directly
 2. **Skills**: Modify the skills section in `index.html` and `aboutme.html`
-3. **Styling**: Update `assets/css/modern-style.css`
-4. **API Configuration**: Change username in `assets/js/github-api.js`:
+3. **LinkedIn Data**: Update `assets/data/linkedin-data.json` with your employment and education details (see [LINKEDIN_INTEGRATION.md](LINKEDIN_INTEGRATION.md))
+4. **Styling**: Update `assets/css/modern-style.css`
+5. **API Configuration**: Change username in `assets/js/github-api.js`:
 ```javascript
 const GITHUB_USERNAME = 'dmdhrumilmistry';
 ```

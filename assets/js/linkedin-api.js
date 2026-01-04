@@ -42,6 +42,13 @@ function saveLinkedInToCache(data) {
     }
 }
 
+// Utility: Escape HTML to prevent XSS
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
 // Fetch LinkedIn data
 async function fetchLinkedInData() {
     const cached = getLinkedInFromCache();
@@ -115,12 +122,17 @@ function showLinkedInError(elementId, message = 'Failed to load LinkedIn data') 
     if (element) {
         element.innerHTML = `
             <div class="error-message">
-                <p>⚠️ ${message}</p>
-                <button class="btn-modern btn-outline-gradient" style="margin-top: 1rem;" onclick="location.reload()">
-                    Retry
-                </button>
+                <p>⚠️ ${escapeHtml(message)}</p>
             </div>
         `;
+        
+        // Add retry button with event listener
+        const retryBtn = document.createElement('button');
+        retryBtn.className = 'btn-modern btn-outline-gradient';
+        retryBtn.style.marginTop = '1rem';
+        retryBtn.textContent = 'Retry';
+        retryBtn.addEventListener('click', () => location.reload());
+        element.querySelector('.error-message').appendChild(retryBtn);
     }
 }
 
@@ -138,28 +150,41 @@ async function renderEmployment(elementId) {
             return;
         }
         
-        const employmentHTML = data.employment.map(job => `
+        const employmentHTML = data.employment.map(job => {
+            const logoHtml = job.logo 
+                ? `<img src="${escapeHtml(job.logo)}" alt="${escapeHtml(job.company)} logo">` 
+                : '<i class="fas fa-building"></i>';
+            
+            return `
             <div class="glass-card linkedin-card" data-aos="fade-up">
                 <div class="linkedin-card-header">
                     <div class="linkedin-logo">
-                        ${job.logo ? `<img src="${job.logo}" alt="${job.company} logo" onerror="this.style.display='none'">` : '<i class="fas fa-building"></i>'}
+                        ${logoHtml}
                     </div>
                     <div class="linkedin-card-info">
-                        <h3 class="linkedin-title">${job.position}</h3>
-                        <div class="linkedin-company">${job.company}</div>
+                        <h3 class="linkedin-title">${escapeHtml(job.position)}</h3>
+                        <div class="linkedin-company">${escapeHtml(job.company)}</div>
                         <div class="linkedin-meta">
-                            <span>${formatDateRange(job.startDate, job.endDate, job.current)}</span>
+                            <span>${escapeHtml(formatDateRange(job.startDate, job.endDate, job.current))}</span>
                             <span class="linkedin-separator">•</span>
-                            <span>${calculateDuration(job.startDate, job.endDate, job.current)}</span>
+                            <span>${escapeHtml(calculateDuration(job.startDate, job.endDate, job.current))}</span>
                         </div>
-                        ${job.location ? `<div class="linkedin-location"><i class="fas fa-map-marker-alt"></i> ${job.location}</div>` : ''}
+                        ${job.location ? `<div class="linkedin-location"><i class="fas fa-map-marker-alt"></i> ${escapeHtml(job.location)}</div>` : ''}
                     </div>
                 </div>
-                ${job.description ? `<p class="linkedin-description">${job.description}</p>` : ''}
+                ${job.description ? `<p class="linkedin-description">${escapeHtml(job.description)}</p>` : ''}
             </div>
-        `).join('');
+        `;
+        }).join('');
         
         element.innerHTML = `<div class="linkedin-list fade-in">${employmentHTML}</div>`;
+        
+        // Add error handler for images
+        element.querySelectorAll('.linkedin-logo img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.style.display = 'none';
+            });
+        });
     } catch (error) {
         showLinkedInError(elementId, 'Failed to load employment data');
     }
@@ -179,25 +204,38 @@ async function renderEducation(elementId) {
             return;
         }
         
-        const educationHTML = data.education.map(edu => `
+        const educationHTML = data.education.map(edu => {
+            const logoHtml = edu.logo 
+                ? `<img src="${escapeHtml(edu.logo)}" alt="${escapeHtml(edu.institution)} logo">` 
+                : '<i class="fas fa-graduation-cap"></i>';
+            
+            return `
             <div class="glass-card linkedin-card" data-aos="fade-up">
                 <div class="linkedin-card-header">
                     <div class="linkedin-logo">
-                        ${edu.logo ? `<img src="${edu.logo}" alt="${edu.institution} logo" onerror="this.style.display='none'">` : '<i class="fas fa-graduation-cap"></i>'}
+                        ${logoHtml}
                     </div>
                     <div class="linkedin-card-info">
-                        <h3 class="linkedin-title">${edu.institution}</h3>
-                        <div class="linkedin-company">${edu.degree}${edu.field ? ` in ${edu.field}` : ''}</div>
+                        <h3 class="linkedin-title">${escapeHtml(edu.institution)}</h3>
+                        <div class="linkedin-company">${escapeHtml(edu.degree)}${edu.field ? ` in ${escapeHtml(edu.field)}` : ''}</div>
                         <div class="linkedin-meta">
-                            <span>${edu.startDate} - ${edu.current ? 'Present' : edu.endDate}</span>
+                            <span>${escapeHtml(edu.startDate)} - ${edu.current ? 'Present' : escapeHtml(edu.endDate)}</span>
                         </div>
                     </div>
                 </div>
-                ${edu.description ? `<p class="linkedin-description">${edu.description}</p>` : ''}
+                ${edu.description ? `<p class="linkedin-description">${escapeHtml(edu.description)}</p>` : ''}
             </div>
-        `).join('');
+        `;
+        }).join('');
         
         element.innerHTML = `<div class="linkedin-list fade-in">${educationHTML}</div>`;
+        
+        // Add error handler for images
+        element.querySelectorAll('.linkedin-logo img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.style.display = 'none';
+            });
+        });
     } catch (error) {
         showLinkedInError(elementId, 'Failed to load education data');
     }
@@ -209,5 +247,6 @@ window.LinkedInAPI = {
     renderEmployment,
     renderEducation,
     formatDateRange,
-    calculateDuration
+    calculateDuration,
+    escapeHtml
 };
